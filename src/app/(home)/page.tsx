@@ -34,7 +34,7 @@ export default async function Home() {
       <PromoBanner
         src="/banner-home-01.png"
         alt="Até 55% de desconto esse mês"
-        className="mt-3 h-auto w-full"
+        className="h-auto w-full"
       />
       <div className="mt-8">
         <Categories />
