@@ -16,6 +16,8 @@ import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "./sheet";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { Avatar, AvatarFallback, AvatarImage } from "./avatar";
 import { Separator } from "./separator";
+import logoSvg from "../../assets/logo.svg";
+import Image from "next/image";
 
 const Header = () => {
   const { data, status } = useSession();
@@ -94,9 +96,13 @@ const Header = () => {
           </div>
         </SheetContent>
       </Sheet>
-      <h1 className="text-lg font-semibold ">
-        <span className="text-primary">DSM</span> STORE
-      </h1>
+      <Image
+        src={logoSvg}
+        alt="logo"
+        quality={100}
+        height={55}
+        className="max-sm:h-9"
+      />
       <Button size="icon" variant={"outline"}>
         <ShoppingCart />
       </Button>
