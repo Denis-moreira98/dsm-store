@@ -32,7 +32,7 @@ const ProductList = ({ products }: ProductListProps) => {
   return (
     <div className="group relative">
       <div
-        className="carousel flex w-full gap-4 overflow-x-auto scroll-smooth px-5  [&::-webkit-scrollbar]:hidden"
+        className="carousel flex w-full gap-4 overflow-x-auto scroll-smooth [&::-webkit-scrollbar]:hidden"
         ref={carousel}
       >
         {products.map((product) => (
