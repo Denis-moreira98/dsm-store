@@ -17,7 +17,7 @@ const ProductItem = ({ product }: ProductItemProps) => {
           height={0}
           width={0}
           sizes="100vh"
-          className="h-[90px] max-h-[70%] w-auto max-w-[90%] cursor-pointer transition-all hover:scale-110"
+          className="h-[90px] max-h-[70%] w-auto max-w-[90%] cursor-pointer transition-all duration-200 ease-linear hover:scale-110"
           alt={product.name}
           style={{
             objectFit: "contain",
@@ -45,7 +45,7 @@ const ProductItem = ({ product }: ProductItemProps) => {
             </>
           ) : (
             <p className="text-sm font-semibold">
-              RS${product.basePrice.toFixed(2)}
+              RS${Number(product.basePrice).toFixed(2)}
             </p>
           )}
         </div>
