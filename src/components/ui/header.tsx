@@ -110,13 +110,15 @@ const Header = () => {
           </div>
         </SheetContent>
       </Sheet>
-      <Image
-        src={logoSvg}
-        alt="logo"
-        quality={100}
-        height={55}
-        className="max-sm:h-9"
-      />
+      <Link href="/">
+        <Image
+          src={logoSvg}
+          alt="logo"
+          quality={100}
+          height={55}
+          className="max-sm:h-9"
+        />
+      </Link>
       <Button size="icon" variant={"outline"}>
         <ShoppingCart />
       </Button>
