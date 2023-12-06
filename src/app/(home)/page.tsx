@@ -2,6 +2,7 @@
 
 import ContainerLayout from "@/components/ui/containerLayout";
 import Image from "next/image";
+import Categories from "./components/categories";
 
 export default function Home() {
   return (
@@ -15,6 +16,9 @@ export default function Home() {
         className="mt-3 h-auto w-full"
         sizes="100vh"
       />
+      <div className="mt-8">
+        <Categories />
+      </div>
     </ContainerLayout>
   );
 }
