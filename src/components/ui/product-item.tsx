@@ -10,14 +10,14 @@ interface ProductItemProps {
 
 const ProductItem = ({ product }: ProductItemProps) => {
   return (
-    <div className="flex max-w-[156px] flex-col gap-4">
-      <div className="relative flex h-[170px] w-[156px]  items-center justify-center rounded-lg bg-accent">
+    <div className="flex max-w-[193px] flex-col gap-4">
+      <div className="relative flex h-[180px] w-[193px]  items-center justify-center rounded-lg bg-accent">
         <Image
           src={product.imageUrls[0]}
           height={0}
           width={0}
           sizes="100vh"
-          className="h-[90px] max-h-[70%] w-auto max-w-[90%]"
+          className="h-[90px] max-h-[70%] w-auto max-w-[90%] cursor-pointer transition-all hover:scale-110"
           alt={product.name}
           style={{
             objectFit: "contain",
