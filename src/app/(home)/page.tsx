@@ -1,5 +1,4 @@
 import ContainerLayout from "@/components/ui/containerLayout";
-import Image from "next/image";
 import Categories from "./components/categories";
 import { prismaClient } from "@/lib/prisma";
 import ProductList from "./components/product-list";
@@ -30,61 +29,77 @@ export default async function Home() {
     },
   });
   return (
-    <ContainerLayout>
-      <PromoBanner
-        src="/banner-home-01.png"
-        alt="Até 55% de desconto esse mês"
-        className="h-auto w-full"
-      />
-      <div className="mt-8">
-        <Categories />
-      </div>
-      <div className="mt-8">
-        <SectionTitle>Ofertas</SectionTitle>
-        <ProductList products={deals} />
-      </div>
-      <div className="mt-10 flex flex-col gap-5 lg:flex-row">
-        <Link href="/" className="flex flex-1">
+    <>
+      <div className="mx-auto mt-3 max-w-[1920px]">
+        <Link href="/deals">
           <PromoBanner
-            src="/banner-home-02.png"
-            alt="Até 55% de desconto em mouses"
-            className="w-0 flex-1 "
+            src="/deals-banner.png"
+            className="hidden h-auto w-full lg:block"
+            alt="Até 55% de desconto esse mês!"
           />
         </Link>
+      </div>
+      <ContainerLayout>
+        <div>
+          <Link href="/deals">
+            <PromoBanner
+              src="/banner-home-01.png"
+              alt="Até 55% de desconto esse mês!"
+              className="px-5 lg:hidden"
+            />
+          </Link>
+        </div>
 
-        <Link href="/" className="flex flex-1">
-          <PromoBanner
-            src="/banner-home-03.png"
-            alt="Até 20% de desconto em fones"
-            className="hidden w-0 flex-1 lg:block"
-          />
-        </Link>
-      </div>
-      <div className="mt-8">
-        <SectionTitle>Teclados</SectionTitle>
-        <ProductList products={keyboards} />
-      </div>
-      <div className="mt-8">
-        <Link href="/">
-          <PromoBanner
-            src="/banner-home-03.png"
-            alt="Até 55% de desconto em mouses!"
-            className="w-full lg:hidden"
-          />
-        </Link>
+        <div className="mt-8">
+          <Categories />
+        </div>
+        <div className="mt-8">
+          <SectionTitle>Ofertas</SectionTitle>
+          <ProductList products={deals} />
+        </div>
+        <div className="mt-10 flex flex-col gap-5 lg:flex-row">
+          <Link href="/" className="flex flex-1">
+            <PromoBanner
+              src="/banner-home-02.png"
+              alt="Até 55% de desconto em mouses"
+              className="w-0 flex-1 "
+            />
+          </Link>
 
-        <Link href="/">
-          <PromoBanner
-            src="/free-shipping-banner.png"
-            alt="Frete grátis para todo Brasil"
-            className="hidden w-full lg:block"
-          />
-        </Link>
-      </div>
-      <div className="mt-8">
-        <SectionTitle>Mouses</SectionTitle>
-        <ProductList products={mouses} />
-      </div>
-    </ContainerLayout>
+          <Link href="/" className="flex flex-1">
+            <PromoBanner
+              src="/banner-home-03.png"
+              alt="Até 20% de desconto em fones"
+              className="hidden w-0 flex-1 lg:block"
+            />
+          </Link>
+        </div>
+        <div className="mt-8">
+          <SectionTitle>Teclados</SectionTitle>
+          <ProductList products={keyboards} />
+        </div>
+        <div className="mt-8">
+          <Link href="/">
+            <PromoBanner
+              src="/banner-home-03.png"
+              alt="Até 55% de desconto em mouses!"
+              className="w-full lg:hidden"
+            />
+          </Link>
+
+          <Link href="/">
+            <PromoBanner
+              src="/free-shipping-banner.png"
+              alt="Frete grátis para todo Brasil"
+              className="hidden w-full lg:block"
+            />
+          </Link>
+        </div>
+        <div className="mt-8">
+          <SectionTitle>Mouses</SectionTitle>
+          <ProductList products={mouses} />
+        </div>
+      </ContainerLayout>
+    </>
   );
 }
