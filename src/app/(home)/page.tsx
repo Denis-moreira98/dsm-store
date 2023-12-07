@@ -1,7 +1,7 @@
 import ContainerLayout from "@/components/ui/containerLayout";
 import Categories from "./components/categories";
 import { prismaClient } from "@/lib/prisma";
-import ProductList from "./components/product-list";
+import ProductList from "../../components/ui/product-list";
 import Link from "next/link";
 import SectionTitle from "./components/section-title";
 import PromoBanner from "./components/promo-banner";

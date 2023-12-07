@@ -5,7 +5,7 @@ import { Product } from "@prisma/client";
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 import { MouseEvent } from "react";
 import { useRef } from "react";
-import { Button } from "../../../components/ui/button";
+import { Button } from "./button";
 
 interface ProductListProps {
   products: Product[];

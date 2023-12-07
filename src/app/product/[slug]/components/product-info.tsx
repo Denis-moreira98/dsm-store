@@ -2,6 +2,7 @@
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+
 import { ProductWithTotalPrice } from "@/helpers/product";
 import {
   ArrowDown,
@@ -80,9 +81,9 @@ const ProductInfo = ({
           <div className="flex flex-col">
             <p>
               Entreg via <span className="font-bold">FSPacket</span>
-              <p className="text-xs text-primary">
-                Envio pra <span className="font-bold">todo Brasil</span>
-              </p>
+            </p>
+            <p className="text-xs text-primary">
+              Envio pra <span className="font-bold">todo Brasil</span>
             </p>
           </div>
         </div>
