@@ -41,7 +41,7 @@ const ProductDatailsPage = async ({
       <ProductInfo product={computeProductTotalPrice(product)} />
       <div>
         <SectionTitle>Produtos recomendados</SectionTitle>
-        <ProductList products={product.category.products} />
+        <ProductList products={product.category.products} />P
       </div>
     </div>
   );
