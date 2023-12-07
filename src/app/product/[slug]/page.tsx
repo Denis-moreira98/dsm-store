@@ -4,6 +4,7 @@ import ProductInfo from "./components/product-info";
 import { computeProductTotalPrice } from "@/helpers/product";
 import ProductList from "@/components/ui/product-list";
 import SectionTitle from "@/components/ui/section-title";
+import ContainerLayout from "@/components/ui/containerLayout";
 
 interface ProductDatailPageProps {
   params: {
@@ -36,14 +37,19 @@ const ProductDatailsPage = async ({
   if (!product) return null;
 
   return (
-    <div className="mt-[6rem] flex flex-col gap-8 pb-8">
-      <ProductImages imagesUrls={product.imageUrls} name={product.name} />
-      <ProductInfo product={computeProductTotalPrice(product)} />
-      <div>
-        <SectionTitle>Produtos recomendados</SectionTitle>
-        <ProductList products={product.category.products} />P
+    <ContainerLayout>
+      <div className="mt-[5.5rem] flex flex-col gap-8 pb-8 lg:gap-10 lg:py-10">
+        <div className="flex flex-col gap-8 lg:flex-row lg:gap-9 lg:px-5">
+          <ProductImages imagesUrls={product.imageUrls} name={product.name} />
+          <ProductInfo product={computeProductTotalPrice(product)} />
+        </div>
+
+        <div className="flex flex-col gap-5">
+          <SectionTitle>Produtos recomendados</SectionTitle>
+          <ProductList products={product.category.products} />
+        </div>
       </div>
-    </div>
+    </ContainerLayout>
   );
 };
 
