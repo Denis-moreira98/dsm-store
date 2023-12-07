@@ -8,7 +8,7 @@ const CatalogoPage = async () => {
   return (
     <div className="container mx-auto max-w-[80rem] p-5">
       <Badge
-        className="w-fit gap-1 border-2 border-primary px-3 py-[0.375rem] text-base uppercase"
+        className="mt-[6rem] w-fit gap-1 border-2 border-primary px-3 py-[0.375rem] text-base uppercase"
         variant="outline"
       >
         <ShapesIcon size={16} />

@@ -11,13 +11,13 @@ interface ProductItemProps {
 const ProductItem = ({ product }: ProductItemProps) => {
   return (
     <div className="flex max-w-[193px] flex-col gap-4">
-      <div className="relative flex h-[180px] w-[193px]  items-center justify-center rounded-lg bg-accent">
+      <div className="relative flex aspect-square h-[180px] w-[193px]  items-center justify-center rounded-lg bg-accent hover:bg-[#121212]">
         <Image
           src={product.imageUrls[0]}
           height={0}
           width={0}
           sizes="100vh"
-          className="h-[90px] max-h-[70%] w-auto max-w-[90%] cursor-pointer transition-all duration-200 ease-linear hover:scale-110"
+          className="h-auto max-h-[70%] w-auto max-w-[80%] cursor-pointer transition-all duration-300 ease-linear hover:scale-[1.2]"
           alt={product.name}
           style={{
             objectFit: "contain",

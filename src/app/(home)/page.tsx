@@ -40,7 +40,7 @@ export default async function Home() {
         </Link>
       </div>
       <ContainerLayout>
-        <div>
+        <div className="mt-[5.2rem]">
           <Link href="/deals">
             <PromoBanner
               src="/banner-home-01.png"

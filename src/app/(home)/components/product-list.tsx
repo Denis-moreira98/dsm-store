@@ -16,7 +16,6 @@ const ProductList = ({ products }: ProductListProps) => {
 
   const handleLeftClick = (event: MouseEvent) => {
     if (carousel.current) {
-      console.log(carousel.current);
       carousel.current.scrollLeft -= carousel.current.offsetWidth;
     }
   };
@@ -24,7 +23,6 @@ const ProductList = ({ products }: ProductListProps) => {
   const handleRightClick = (event: MouseEvent) => {
     event.preventDefault();
     if (carousel.current) {
-      console.log(carousel.current);
       carousel.current.scrollLeft += carousel.current.offsetWidth;
     }
   };
