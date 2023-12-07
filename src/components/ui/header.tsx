@@ -35,7 +35,7 @@ const Header = () => {
     await signOut();
   };
   return (
-    <Card className="flex items-center justify-between p-[1.875rem]">
+    <Card className="fixed z-50 flex w-full items-center justify-between p-[1.5rem] tracking-[0.22px] shadow-lg shadow-[#2A0E61]/50">
       <Sheet>
         <SheetTrigger asChild>
           <Button size="icon" variant={"outline"}>

@@ -30,7 +30,7 @@ export default async function Home() {
   });
   return (
     <>
-      <div className="mx-auto mt-3 max-w-[1920px]">
+      <div className="mx-auto max-w-[1920px]">
         <Link href="/deals">
           <PromoBanner
             src="/deals-banner.png"
