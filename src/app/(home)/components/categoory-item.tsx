@@ -25,17 +25,15 @@ const CategoryItem = ({ category }: CategoryItemProps) => {
     mouses: <MouseIcon size={16} />,
   };
   return (
-    <ContainerLayout>
-      <Link href={`/category/${category.slug}`}>
-        <Badge
-          variant="outline"
-          className="flex items-center justify-center gap-1 rounded-lg py-3 hover:bg-accent"
-        >
-          {categoryIcon[category.slug as keyof typeof categoryIcon]}
-          <span className="text-xs font-semibold">{category.name}</span>
-        </Badge>
-      </Link>
-    </ContainerLayout>
+    <Link href={`/category/${category.slug}`}>
+      <Badge
+        variant="outline"
+        className="flex items-center justify-center gap-2 rounded-lg py-3 transition-all hover:bg-accent"
+      >
+        {categoryIcon[category.slug as keyof typeof categoryIcon]}
+        <span className="text-xs font-bold lg:text-sm">{category.name}</span>
+      </Badge>
+    </Link>
   );
 };
 
