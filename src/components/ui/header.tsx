@@ -25,6 +25,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "./avatar";
 import { Separator } from "./separator";
 import logoSvg from "../../assets/logo.svg";
 import Image from "next/image";
+import Cart from "./cart";
 
 const Header = () => {
   const { data, status } = useSession();
@@ -122,9 +123,16 @@ const Header = () => {
           className="max-sm:h-9"
         />
       </Link>
-      <Button size="icon" variant={"outline"}>
-        <ShoppingCart />
-      </Button>
+      <Sheet>
+        <SheetTrigger asChild>
+          <Button size="icon" variant={"outline"}>
+            <ShoppingCart />
+          </Button>
+        </SheetTrigger>
+        <SheetContent>
+          <Cart />
+        </SheetContent>
+      </Sheet>
     </Card>
   );
 };
