@@ -7,6 +7,7 @@ import { computeProductTotalPrice } from "@/helpers/product";
 
 const Cart = () => {
   const { products } = useContext(CartContext);
+
   return (
     <div className="flex flex-col gap-8">
       <Badge
