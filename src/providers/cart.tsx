@@ -1,7 +1,7 @@
 "use client";
 
 import { ProductWithTotalPrice } from "@/helpers/product";
-import { ReactNode, createContext, useState } from "react";
+import { ReactNode, createContext, useState, useMemo } from "react";
 
 export interface CartProduct extends ProductWithTotalPrice {
   quantity: number;
@@ -12,6 +12,9 @@ interface ICartContext {
   cartTotalPrice: number;
   cartBasePrice: number;
   cartTotalDiscount: number;
+  total: number;
+  subtotal: number;
+  totalDiscount: number;
   addProductToCart: (product: CartProduct) => void;
   decreaseProductQuantity: (productId: string) => void;
   IncreaseProductQuantity: (productId: string) => void;
@@ -23,6 +26,9 @@ export const CartContext = createContext<ICartContext>({
   cartTotalPrice: 0,
   cartBasePrice: 0,
   cartTotalDiscount: 0,
+  total: 0,
+  subtotal: 0,
+  totalDiscount: 0,
   addProductToCart: () => {},
   decreaseProductQuantity: () => {},
   IncreaseProductQuantity: () => {},
@@ -32,8 +38,24 @@ export const CartContext = createContext<ICartContext>({
 const CartProvider = ({ children }: { children: ReactNode }) => {
   const [products, setProducts] = useState<CartProduct[]>([]);
 
+  // Total sem descontos
+  const subtotal = useMemo(() => {
+    return products.reduce((acc, product) => {
+      return acc + Number(product.basePrice) * product.quantity;
+    }, 0);
+  }, [products]);
+
+  // Total com descontos
+  const total = useMemo(() => {
+    return products.reduce((acc, product) => {
+      return acc + product.totalPrice * product.quantity;
+    }, 0);
+  }, [products]);
+
+  const totalDiscount = subtotal - total;
+
   const addProductToCart = (product: CartProduct) => {
-    // se o produto já existe no carrinho, apenas aumente a sua quantdade
+    // se o produto já existe no carrinho, apenas aumente a sua quantidade
     const productIsAlreadyOnCart = products.some(
       (cartProduct) => cartProduct.id === product.id,
     );
@@ -53,7 +75,7 @@ const CartProvider = ({ children }: { children: ReactNode }) => {
 
       return;
     }
-    // se não, adiiocne o produto á lista
+    // se não, adicione o produto á lista
     setProducts((prev) => [...prev, product]);
   };
 
@@ -103,6 +125,9 @@ const CartProvider = ({ children }: { children: ReactNode }) => {
         decreaseProductQuantity,
         IncreaseProductQuantity,
         removeProductFromCart,
+        total,
+        totalDiscount,
+        subtotal,
         cartTotalPrice: 0,
         cartBasePrice: 0,
         cartTotalDiscount: 0,
