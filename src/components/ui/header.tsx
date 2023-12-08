@@ -47,23 +47,26 @@ const Header = () => {
             Menu
           </SheetHeader>
 
-          <div className="flex flex-col">
-            <div className="item-center my-4 flex gap-2 py-4">
-              {status === "authenticated" && data?.user && (
+          {status === "authenticated" && data?.user && (
+            <div className="flex flex-col">
+              <div className="flex items-center gap-2 py-4">
                 <Avatar>
-                  {data?.user.image && <AvatarImage src={data?.user.image} />}
                   <AvatarFallback>
-                    {data?.user.name?.[0].toUpperCase()}
+                    {data.user.name?.[0].toUpperCase()}
                   </AvatarFallback>
+
+                  {data.user.image && <AvatarImage src={data.user.image} />}
                 </Avatar>
-              )}
-              <div className="flex flex-col">
-                <p className="font-medium">{data?.user?.name}</p>
-                <p className="text-sm opacity-75">Boas compras!</p>
+
+                <div className="flex flex-col">
+                  <p className="font-medium">Olá, {data.user.name}</p>
+                  <p className="text-sm opacity-75">Boas compras!</p>
+                </div>
               </div>
+
+              <Separator />
             </div>
-            <Separator />
-          </div>
+          )}
 
           <div className="mt-4 flex flex-col gap-2">
             {status === "unauthenticated" && (
