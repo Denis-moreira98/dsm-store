@@ -1,7 +1,7 @@
 "use client";
 
 import { ProductWithTotalPrice } from "@/helpers/product";
-import { ReactNode, createContext, useState, useMemo } from "react";
+import { ReactNode, createContext, useState, useMemo, useEffect } from "react";
 
 export interface CartProduct extends ProductWithTotalPrice {
   quantity: number;
@@ -36,7 +36,17 @@ export const CartContext = createContext<ICartContext>({
 });
 
 const CartProvider = ({ children }: { children: ReactNode }) => {
-  const [products, setProducts] = useState<CartProduct[]>([]);
+  const [products, setProducts] = useState<CartProduct[]>(
+    JSON.parse(
+      (typeof localStorage !== "undefined" &&
+        localStorage.getItem("@DSM-STORE/products-cart")) ||
+        "[]",
+    ),
+  );
+
+  useEffect(() => {
+    localStorage.setItem("@DSM-STORE/products-cart", JSON.stringify(products));
+  }, [products]);
 
   // Total sem descontos
   const subtotal = useMemo(() => {
@@ -55,10 +65,11 @@ const CartProvider = ({ children }: { children: ReactNode }) => {
   const totalDiscount = subtotal - total;
 
   const addProductToCart = (product: CartProduct) => {
-    // se o produto já existe no carrinho, apenas aumente a sua quantidade
+    // se o produto já estiver no carrinho, apenas aumente a sua quantidade
     const productIsAlreadyOnCart = products.some(
       (cartProduct) => cartProduct.id === product.id,
     );
+
     if (productIsAlreadyOnCart) {
       setProducts((prev) =>
         prev.map((cartProduct) => {
