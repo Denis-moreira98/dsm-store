@@ -3,5 +3,7 @@ declare namespace NodeJS {
     DATABASE: string;
     GOOGLE_CLIENT_ID: string;
     GOOGLE_CLIENT_SECRET: string;
+    STRIPE_SECRET_KEY: string;
+    NEXT_PUBLIC_STRIPE_PUBLIC_KEY: string;
   }
 }

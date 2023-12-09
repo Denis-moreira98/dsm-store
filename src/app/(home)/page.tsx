@@ -33,6 +33,7 @@ export default async function Home() {
       <div className="mx-auto max-w-[1920px]">
         <Link href="/deals">
           <PromoBanner
+            priority
             src="/deals-banner.png"
             className="hidden h-auto w-full lg:block"
             alt="Até 55% de desconto esse mês!"
