@@ -44,9 +44,7 @@ const Cart = () => {
                 />
               ))
             ) : (
-              <p className="text-center font-semibold">
-                Carrinho vazio. Vamos fazer compras?
-              </p>
+              <p className="text-center font-semibold">Carrinho vazio...</p>
             )}
           </div>
         </ScrollArea>
@@ -76,7 +74,7 @@ const Cart = () => {
         </div>
       )}
       <Button
-        className="mt-7 font-bold uppercase"
+        className="mt-7 text-center font-bold uppercase"
         onClick={handleFinishPurchasesClick}
       >
         Finalizar compra
