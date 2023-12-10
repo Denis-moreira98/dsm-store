@@ -59,7 +59,7 @@ export default async function Home() {
           <ProductList products={deals} />
         </div>
         <div className="mt-10 flex flex-col gap-5 lg:flex-row">
-          <Link href="/" className="flex flex-1">
+          <Link href="/deals" className="flex flex-1">
             <PromoBanner
               src="/banner-home-02.png"
               alt="Até 55% de desconto em mouses"
@@ -67,7 +67,7 @@ export default async function Home() {
             />
           </Link>
 
-          <Link href="/" className="flex flex-1">
+          <Link href="/deals" className="flex flex-1">
             <PromoBanner
               src="/banner-home-03.png"
               alt="Até 20% de desconto em fones"
