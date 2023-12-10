@@ -9,7 +9,7 @@ const CatalogoPage = async () => {
   return (
     <ContainerLayout>
       <Badge
-        className="mt-[6rem] w-fit gap-1 border-2 border-primary px-3 py-[0.375rem] text-base uppercase"
+        className="mt-[5.7rem] w-fit gap-1 border-2 border-primary px-3 py-[0.375rem] text-base uppercase"
         variant="outline"
       >
         <ShapesIcon size={16} />

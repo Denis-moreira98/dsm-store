@@ -21,9 +21,9 @@ const CategoryProducts = async ({ params }: any) => {
 
   return (
     <ContainerLayout>
-      <div className="mx-auto mt-[3.5rem] flex flex-col justify-center gap-7 lg:container lg:gap-8 lg:py-10">
+      <div className="mx-auto mt-[5.7rem] w-full max-w-7xl gap-4">
         <Badge
-          className="w-fit gap-2 border-2 border-primary px-3 py-[0.375rem] text-base uppercase"
+          className="mb-4 w-fit gap-2 border-2 border-primary px-3 py-[0.375rem] text-base uppercase"
           variant="outline"
         >
           {CATEGORY_ICON[params.slug as keyof typeof CATEGORY_ICON]}
