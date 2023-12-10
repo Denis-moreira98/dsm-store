@@ -7,9 +7,9 @@ import ContainerLayout from "@/components/ui/containerLayout";
 const CatalogoPage = async () => {
   const categories = await prismaClient.category.findMany({});
   return (
-    <ContainerLayout>
+    <ContainerLayout className="mt-[5.7rem]">
       <Badge
-        className="mt-[5.7rem] w-fit gap-1 border-2 border-primary px-3 py-[0.375rem] text-base uppercase"
+        className="w-fit gap-1 border-2 border-primary px-3 py-[0.375rem] text-base uppercase"
         variant="outline"
       >
         <ShapesIcon size={16} />

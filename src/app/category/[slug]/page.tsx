@@ -20,8 +20,8 @@ const CategoryProducts = async ({ params }: any) => {
   }
 
   return (
-    <ContainerLayout>
-      <div className="mx-auto mt-[5.7rem] w-full max-w-7xl gap-4">
+    <ContainerLayout className="mt-[5.7rem]">
+      <div className="gap-4">
         <Badge
           className="mb-4 w-fit gap-2 border-2 border-primary px-3 py-[0.375rem] text-base uppercase"
           variant="outline"

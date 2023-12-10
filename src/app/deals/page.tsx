@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import ContainerLayout from "@/components/ui/containerLayout";
 import ProductItem from "@/components/ui/product-item";
 import { computeProductTotalPrice } from "@/helpers/product";
 import { prismaClient } from "@/lib/prisma";
@@ -14,7 +15,7 @@ const DealsPage = async () => {
   });
 
   return (
-    <div className="mx-auto mt-[5.7rem] w-full max-w-7xl p-5">
+    <ContainerLayout className="mt-[5.7rem]">
       <Badge
         variant="outline"
         className="w-fit gap-2 border-2 border-primary px-3 py-[0.375rem] text-base uppercase"
@@ -30,7 +31,7 @@ const DealsPage = async () => {
           />
         ))}
       </div>
-    </div>
+    </ContainerLayout>
   );
 };
 
