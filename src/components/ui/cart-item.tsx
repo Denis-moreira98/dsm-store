@@ -3,12 +3,14 @@ import Image from "next/image";
 import { Button } from "./button";
 import { ChevronLeftIcon, ChevronRightIcon, TrashIcon } from "lucide-react";
 import { useContext } from "react";
+import { useToast } from "./use-toast";
 
 interface CartItemProps {
   product: CartProduct;
 }
 
 const CartItem = ({ product }: CartItemProps) => {
+  const { toast } = useToast();
   const {
     decreaseProductQuantity,
     IncreaseProductQuantity,
@@ -23,6 +25,9 @@ const CartItem = ({ product }: CartItemProps) => {
   };
   const handleRemoveProductFromCartClick = () => {
     removeProductFromCart(product.id);
+    toast({
+      description: "Item removido do carrinho!",
+    });
   };
   return (
     <div className="flex items-center justify-between">

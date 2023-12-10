@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import DiscountBadge from "@/components/ui/discount-badge";
+import { useToast } from "@/components/ui/use-toast";
 import { ProductWithTotalPrice } from "@/helpers/product";
 import { CartContext } from "@/providers/cart";
 import { ChevronLeftIcon, ChevronRightIcon, TruckIcon } from "lucide-react";
@@ -13,8 +14,9 @@ interface ProductInfoProps {
 
 const ProductInfo = ({ product }: ProductInfoProps) => {
   const [quantity, setQuantity] = useState(1);
-
   const { addProductToCart } = useContext(CartContext);
+
+  const { toast } = useToast();
 
   const handleDecreaseQuantityClick = () => {
     setQuantity((prev) => (prev === 1 ? prev : prev - 1));
@@ -25,6 +27,9 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
 
   const handleAddToCartClick = () => {
     addProductToCart({ ...product, quantity });
+    toast({
+      description: "Item adicionado ao carrinho!",
+    });
   };
 
   return (
