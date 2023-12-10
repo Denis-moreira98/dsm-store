@@ -80,7 +80,7 @@ export default async function Home() {
           <ProductList products={keyboards} />
         </div>
         <div className="mt-8">
-          <Link href="/">
+          <Link href="/deals">
             <PromoBanner
               src="/banner-home-03.png"
               alt="Até 55% de desconto em mouses!"
