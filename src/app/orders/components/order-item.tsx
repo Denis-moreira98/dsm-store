@@ -13,6 +13,7 @@ import { format } from "date-fns";
 import OrderProductItem from "./order-product-item";
 import { useMemo } from "react";
 import { computeProductTotalPrice } from "@/helpers/product";
+import getOrderStatus from "../helpers/status";
 
 interface OrderItemProps {
   order: Prisma.OrderGetPayload<{
@@ -28,14 +29,14 @@ const OrderItem = ({ order }: OrderItemProps) => {
   const subtotal = useMemo(() => {
     return order.orderProducts.reduce((acc, orderProduct) => {
       return (
-        acc + Number(orderProduct.products.basePrice) * orderProduct.quantity
+        acc + Number(orderProduct.product.basePrice) * orderProduct.quantity
       );
     }, 0);
   }, [order.orderProducts]);
 
   const total = useMemo(() => {
     return order.orderProducts.reduce((acc, product) => {
-      const productWithTotalPrice = computeProductTotalPrice(product.products);
+      const productWithTotalPrice = computeProductTotalPrice(product.product);
       return acc + productWithTotalPrice.totalPrice * product.quantity;
     }, 0);
   }, [order.orderProducts]);
