@@ -59,7 +59,7 @@ export default async function Home() {
           <ProductList products={deals} />
         </div>
         <div className="mt-10 flex flex-col gap-5 lg:flex-row">
-          <Link href="/deals" className="flex flex-1">
+          <Link href="/category/mouses" className="flex flex-1">
             <PromoBanner
               src="/banner-home-02.png"
               alt="Até 55% de desconto em mouses"
@@ -67,7 +67,7 @@ export default async function Home() {
             />
           </Link>
 
-          <Link href="/deals" className="flex flex-1">
+          <Link href="/category/headphones" className="flex flex-1">
             <PromoBanner
               src="/banner-home-03.png"
               alt="Até 20% de desconto em fones"
@@ -80,7 +80,7 @@ export default async function Home() {
           <ProductList products={keyboards} />
         </div>
         <div className="mt-8">
-          <Link href="/deals">
+          <Link href="/category/headphones">
             <PromoBanner
               src="/banner-home-03.png"
               alt="Até 55% de desconto em mouses!"
@@ -88,7 +88,7 @@ export default async function Home() {
             />
           </Link>
 
-          <Link href="/">
+          <Link href="/deals">
             <PromoBanner
               src="/free-shipping-banner.png"
               alt="Frete grátis para todo Brasil"
