@@ -23,7 +23,7 @@ const DealsPage = async () => {
         <PercentIcon size={16} />
         Ofertas
       </Badge>
-      <div className="grid grid-cols-2 items-center items-center gap-8 pt-5 md:grid-cols-4 lg:grid-cols-5">
+      <div className="grid grid-cols-2 items-center gap-8 pt-5 md:grid-cols-4 lg:grid-cols-5">
         {deals.map((product) => (
           <ProductItem
             key={product.id}
