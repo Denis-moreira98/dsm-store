@@ -20,6 +20,7 @@ const ProductImages = ({ imagesUrls, name }: ProductImagesProps) => {
       <div className="flex h-[380px] w-full items-center justify-center bg-accent lg:h-full lg:rounded-lg">
         <Image
           src={currentImage}
+          priority
           alt={name}
           height={0}
           width={0}
@@ -42,6 +43,7 @@ const ProductImages = ({ imagesUrls, name }: ProductImagesProps) => {
               src={imagesUrl}
               alt={name}
               height={0}
+              priority
               width={0}
               sizes="100vw"
               className="h-auto max-h-[70%] w-auto max-w-[80%]"

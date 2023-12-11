@@ -141,7 +141,9 @@ const Header = () => {
           alt="logo"
           quality={100}
           height={55}
+          width={0}
           className="max-sm:h-9"
+          priority
         />
       </Link>
       <Sheet>
