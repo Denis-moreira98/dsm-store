@@ -22,6 +22,7 @@ async function OrderPage() {
 
   const orders = await prismaClient.order.findMany({
     where: {
+      // @ts-ignore
       userId: session.user.id,
     },
     include: {
@@ -34,8 +35,11 @@ async function OrderPage() {
   });
 
   return (
-    <ContainerLayout className="mt-[5.5rem]">
-      <Badge variant="outline">
+    <ContainerLayout className="mt-[5.7rem]">
+      <Badge
+        variant="outline"
+        className="w-fit gap-1 border-2 border-primary px-3 py-[0.375rem] text-base uppercase"
+      >
         <PackageSearchIcon size={16} />
         Meus Pedidos
       </Badge>
