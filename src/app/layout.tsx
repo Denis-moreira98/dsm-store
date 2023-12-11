@@ -11,10 +11,27 @@ import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "DSM STORE",
-  description: "E-Commerce",
+  title: "DSMSTORE - Os melhores preços do Brasil",
+  description: "Os melhores periféricos e os melhores preços em um só lugar",
+  keywords: [
+    "periféricos",
+    "mouses",
+    "teclados",
+    "fones",
+    "e-commerce",
+    "monitores",
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+    },
+  },
 };
-
 export default function RootLayout({
   children,
 }: {
