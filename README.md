@@ -15,7 +15,7 @@ A interface do usuário é aprimorada com a biblioteca shadcn/ui para componente
 - Pagamento do Pedido com a API do Stripe: Experiência segura de pagamento online com integração da API do Stripe, incluindo o uso de webhooks para processar eventos relacionados ao pagamento;
 - Funcionalidade "Meus Pedidos": Permite aos usuários acompanhar o status de pagamento e visualizar detalhes das compras realizadas.
 
-###  [Deploy](https://dsm-store.vercel.app/) 🚀🚗 
+###  [Deploy](https://dsm-store.vercel.app/) 🚀 
 
 ## Tecnologias Utilizadas 🚀
 
