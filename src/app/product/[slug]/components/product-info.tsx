@@ -90,7 +90,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
 
           <div className="flex flex-col">
             <p className="text-xs">
-              Entrega via <span className="font-bold">FSPacket</span>
+              Entrega via <span className="font-bold">DSM-Packet©</span>
             </p>
             <p className="text-xs text-[#8162ff]">
               Envio para <span className="font-bold">todo Brasil</span>

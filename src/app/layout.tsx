@@ -11,7 +11,7 @@ import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "DSMSTORE - Os melhores preços do Brasil",
+  title: "DSM STORE - Os melhores preços do Brasil",
   description: "Os melhores periféricos e os melhores preços em um só lugar",
   keywords: [
     "periféricos",
