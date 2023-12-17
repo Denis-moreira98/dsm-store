@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { authOptions } from "@/lib/auth";
 import { prismaClient } from "@/lib/prisma";
-import { PackageSearchIcon } from "lucide-react";
+import { LogInIcon, PackageSearchIcon } from "lucide-react";
 import { getServerSession } from "next-auth";
 import OrderItem from "./components/order-item";
 import ContainerLayout from "@/components/ui/containerLayout";
@@ -14,7 +14,7 @@ async function OrderPage() {
   if (!session || !session.user) {
     return (
       <div className="flex h-full flex-col items-center justify-center gap-2 p-5">
-        <h2 className="font-bold">Acesso Negado!</h2>
+        <h1 className="font-bold">Acesso Negado!</h1>
         <p className="text-sm opacity-60">Faça login para ver seus pedidos</p>
       </div>
     );

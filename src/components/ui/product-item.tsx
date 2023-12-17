@@ -21,12 +21,9 @@ const ProductItem = ({ product, className }: ProductItemProps) => {
           height={0}
           width={0}
           sizes="100vh"
-          className="h-auto max-h-[70%] w-auto max-w-[80%] cursor-pointer transition-all duration-300 ease-linear hover:scale-[1.2]"
+          className="h-auto max-h-[70%] w-auto max-w-[80%] cursor-pointer object-contain transition-all duration-300 ease-linear hover:scale-[1.2]"
           alt={product.name}
           layout="responsive"
-          style={{
-            objectFit: "contain",
-          }}
         />
         {product.discountPercentage > 0 && (
           <DiscountBadge className="absolute left-2 top-3">
