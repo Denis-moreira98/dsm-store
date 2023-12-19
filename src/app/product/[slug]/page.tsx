@@ -45,7 +45,7 @@ const ProductDatailsPage = async ({
         </div>
 
         <div className="flex flex-col gap-5">
-          <SectionTitle>Produtos recomendados</SectionTitle>
+          <SectionTitle>Recomendados</SectionTitle>
           <ProductList products={product.category.products} />
         </div>
       </div>
