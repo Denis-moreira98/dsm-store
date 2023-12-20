@@ -100,6 +100,20 @@ const Header = () => {
               </Button>
             )}
 
+            {status === "authenticated" && (
+              <SheetClose asChild>
+                <Link href="/orders">
+                  <Button
+                    variant="outline"
+                    className="w-full justify-start gap-2"
+                  >
+                    <PackageSearchIcon size={16} />
+                    Meus pedidos
+                  </Button>
+                </Link>
+              </SheetClose>
+            )}
+
             <SheetClose asChild>
               <Link href="/">
                 <Button
@@ -108,17 +122,6 @@ const Header = () => {
                 >
                   <HomeIcon size={16} />
                   Inicio
-                </Button>
-              </Link>
-            </SheetClose>
-            <SheetClose asChild>
-              <Link href="/orders">
-                <Button
-                  variant="outline"
-                  className="w-full justify-start gap-2"
-                >
-                  <PackageSearchIcon size={16} />
-                  Meus pedidos
                 </Button>
               </Link>
             </SheetClose>
