@@ -72,7 +72,6 @@ const Header = () => {
                   <p className="text-sm opacity-75">Boas compras!</p>
                 </div>
               </div>
-
               <Separator />
             </div>
           )}
@@ -96,7 +95,7 @@ const Header = () => {
                 className="w-full justify-start gap-2"
               >
                 <LogOut size={16} />
-                Fazer LogOut
+                Sair
               </Button>
             )}
 
