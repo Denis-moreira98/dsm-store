@@ -29,8 +29,6 @@ A interface do usuário é aprimorada com a biblioteca shadcn/ui para componente
 - API do Stripe: Integração para processamento seguro de pagamentos online.
 
 
-![Captura de Tela (242)](https://github.com/Denis-moreira98/dsm-store/assets/72985107/5695ddc1-7ee0-43ad-a452-3bce8ee44582)
-
 ![Captura de Tela (241)](https://github.com/Denis-moreira98/dsm-store/assets/72985107/0c51b02c-6597-4e45-b537-171235b26a05)
 
 ![Captura de Tela (243)](https://github.com/Denis-moreira98/dsm-store/assets/72985107/3c3d5f22-563e-4b0f-82e3-2f5964bceaab)
@@ -40,6 +38,8 @@ A interface do usuário é aprimorada com a biblioteca shadcn/ui para componente
 ![Captura de Tela (245)](https://github.com/Denis-moreira98/dsm-store/assets/72985107/01b4de8b-37f9-4dfd-845e-ed381a94e433)
 
 ![Captura de Tela (246)](https://github.com/Denis-moreira98/dsm-store/assets/72985107/cd92a732-b828-4df4-9bc3-6017cf3c0c12)
+
+![Captura de Tela (242)](https://github.com/Denis-moreira98/dsm-store/assets/72985107/5695ddc1-7ee0-43ad-a452-3bce8ee44582)
 
 ![Captura de Tela (247)](https://github.com/Denis-moreira98/dsm-store/assets/72985107/491961d0-3f47-430e-9927-1cc600ec2eea)
 
