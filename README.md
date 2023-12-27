@@ -4,7 +4,8 @@ O DSM STORE é um projeto de e-commerce que utiliza tecnologias modernas para of
 
 A interface do usuário é aprimorada com a biblioteca shadcn/ui para componentes reutilizáveis e estilizáveis, enquanto o design é estilizado usando o framework CSS Tailwind. A integração da API do Stripe possibilita um sistema de pagamento online seguro, permitindo aos usuários realizar transações de forma conveniente.
 
-![Captura de Tela (240)](https://github.com/Denis-moreira98/dsm-store/assets/72985107/a024bef5-0b64-41d8-a442-bbeba0e98dc7)
+![Group 2](https://github.com/Denis-moreira98/dsm-store/assets/72985107/ce8d2541-f619-4f3b-94bb-6094bc2c13ef)
+
 
 ## Funcionalidades 📦
 
@@ -28,6 +29,7 @@ A interface do usuário é aprimorada com a biblioteca shadcn/ui para componente
 - Tailwind CSS: Framework CSS que oferece classes pré-estilizadas para facilitar o design;
 - API do Stripe: Integração para processamento seguro de pagamentos online.
 
+![Captura de Tela (240)](https://github.com/Denis-moreira98/dsm-store/assets/72985107/a024bef5-0b64-41d8-a442-bbeba0e98dc7)
 
 ![Captura de Tela (241)](https://github.com/Denis-moreira98/dsm-store/assets/72985107/0c51b02c-6597-4e45-b537-171235b26a05)
 
