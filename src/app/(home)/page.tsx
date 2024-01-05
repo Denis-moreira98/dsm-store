@@ -30,7 +30,7 @@ export default async function Home() {
   });
   return (
     <>
-      <div className="mx-auto max-w-[1920px]">
+      <div className="mx-auto mt-[6.5rem] max-w-[1920px]">
         <Link href="/deals">
           <PromoBanner
             priority
@@ -41,7 +41,7 @@ export default async function Home() {
         </Link>
       </div>
       <ContainerLayout>
-        <div className="mt-[5.2rem]">
+        <div className="mt-2">
           <Link href="/deals">
             <PromoBanner
               src="/banner-home-01.png"
