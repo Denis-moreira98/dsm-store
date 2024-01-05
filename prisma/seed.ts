@@ -8,7 +8,7 @@ async function main() {
       data: {
         name: "Mouses",
         slug: "mouses",
-        imageUrl: "https://fsw-store.s3.sa-east-1.amazonaws.com/mouses.png",
+        imageUrl: "https://i.imgur.com/cgyRd03.png",
       },
     });
 
@@ -19,10 +19,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_mx-master-3s.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_mx-master-3s.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_mx-master-3s.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_mx-master-3s.png",
+          "https://i.imgur.com/WluGdl3.png",
+          "https://i.imgur.com/7iVxyJy.png",
+          "https://i.imgur.com/6SsPWru.png",
+          "https://i.imgur.com/NpU4aM1.png",
         ],
         basePrice: 650,
         categoryId: mousesCategory.id,
@@ -34,14 +34,29 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_logi-superlight.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_logi-superlight.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_logi-superlight.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_logi-superlight.png",
+          "https://i.imgur.com/FUSPvj6.png",
+          "https://i.imgur.com/Zy2QjZk.png",
+          "https://i.imgur.com/zuhJpAi.png",
+          "https://i.imgur.com/HO8aDrM.png",
         ],
         basePrice: 750,
         categoryId: mousesCategory.id,
         discountPercentage: 5, // 5% discount
+      },
+      {
+        name: "Logitech M720 Triathlon",
+        slug: "logitech-m720-triathlon",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+        imageUrls: [
+          "https://i.imgur.com/jy3A5sc.png",
+          "https://i.imgur.com/wYpnXfg.png",
+          "https://i.imgur.com/YhBbLnI.png",
+          "https://i.imgur.com/jy3A5sc.png",
+        ],
+        basePrice: 285,
+        categoryId: mousesCategory.id,
+        discountPercentage: 15, // 15% discount
       },
       {
         name: "Logitech G305 Lightspeed",
@@ -49,10 +64,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_logi-lightspeed.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_logi-lightspeed.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_logi-lightspeed.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_logi-lightspeed.png",
+          "https://i.imgur.com/03x5hCM.png",
+          "https://i.imgur.com/9ieTa2V.png",
+          "https://i.imgur.com/ys6l9sA.png",
+          "https://i.imgur.com/j5d9yCB.png",
         ],
         basePrice: 300,
         categoryId: mousesCategory.id,
@@ -64,10 +79,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_hyperx-dart.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_hyperx-dart.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_hyperx-dart.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_hyperx-dart.png",
+          "https://i.imgur.com/xCs2DC9.png",
+          "https://i.imgur.com/NGSJOd6.png",
+          "https://i.imgur.com/u7cGTE4.png",
+          "https://i.imgur.com/QJFqBhQ.png",
         ],
         basePrice: 600,
         categoryId: mousesCategory.id,
@@ -79,10 +94,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_razer-deathadder.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_razer-deathadder.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_razer-deathadder.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_razer-deathadder.png",
+          "https://i.imgur.com/cgyRd03.png",
+          "https://i.imgur.com/iulWWzE.png",
+          "https://i.imgur.com/yzOcLVC.png",
+          "https://i.imgur.com/YOIpCp2.png",
         ],
         basePrice: 350,
         categoryId: mousesCategory.id,
@@ -98,7 +113,7 @@ async function main() {
       data: {
         name: "Teclados",
         slug: "keyboards",
-        imageUrl: "https://fsw-store.s3.sa-east-1.amazonaws.com/keyboards.png",
+        imageUrl: "https://i.imgur.com/sncRYlk.png",
       },
     });
 
@@ -109,10 +124,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_logi-mx-keys-mini.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_logi-mx-keys-mini.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_logi-mx-keys-mini.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_logi-mx-keys-mini.png",
+          "https://i.imgur.com/4ctZ0ZY.png",
+          "https://i.imgur.com/rqC7lbl.png",
+          "https://i.imgur.com/0y5vFTY.png",
+          "https://i.imgur.com/MI2dffP.png",
         ],
         basePrice: 650,
         categoryId: keyboardsCategory.id,
@@ -124,10 +139,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_logi-mx-keys-s.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_logi-mx-keys-s.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_logi-mx-keys-s.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_logi-mx-keys-s.png",
+          "https://i.imgur.com/ql3vFz1.png",
+          "https://i.imgur.com/IfYa9ma.png",
+          "https://i.imgur.com/yN6XMvI.png",
+          "https://i.imgur.com/4tB6qro.png",
         ],
         basePrice: 750,
         categoryId: keyboardsCategory.id,
@@ -139,10 +154,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_logi-pop-keys.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_logi-pop-keys.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_logi-pop-keys.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_logi-pop-keys.png",
+          "https://i.imgur.com/iC622f6.png",
+          "https://i.imgur.com/88028DQ.png",
+          "https://i.imgur.com/XBuZXDp.png",
+          "https://i.imgur.com/9UAWeTY.png",
         ],
         basePrice: 440,
         categoryId: keyboardsCategory.id,
@@ -154,10 +169,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_logi-mx-mechanical.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_logi-mx-mechanical.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_logi-mx-mechanical.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_logi-mx-mechanical.png",
+          "https://i.imgur.com/z6q8c6k.png",
+          "https://i.imgur.com/s0LdPcB.png",
+          "https://i.imgur.com/MtoIZ9N.png",
+          "https://i.imgur.com/QOKUYWM.png",
         ],
         basePrice: 700,
         categoryId: keyboardsCategory.id,
@@ -169,10 +184,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_epomaker-th80.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_epomaker-th80.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_epomaker-th80.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_epomaker-th80.png",
+          "https://i.imgur.com/RbWI5lp.png",
+          "https://i.imgur.com/wQFshxz.png",
+          "https://i.imgur.com/4uvIOUP.png",
+          "https://i.imgur.com/6vJyBIF.png",
         ],
         basePrice: 500,
         categoryId: keyboardsCategory.id,
@@ -184,10 +199,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_redragon-gamer-ashe.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_redragon-gamer-ashe.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_redragon-gamer-ashe.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_redragon-gamer-ashe.png",
+          "https://i.imgur.com/dadh3eu.png",
+          "https://i.imgur.com/sncRYlk.png",
+          "https://i.imgur.com/75tCNkX.png",
+          "https://i.imgur.com/KTSoin6.png",
         ],
         basePrice: 400,
         categoryId: keyboardsCategory.id,
@@ -203,7 +218,7 @@ async function main() {
       data: {
         name: "Fones",
         slug: "headphones",
-        imageUrl: "https://fsw-store.s3.sa-east-1.amazonaws.com/headphones.png",
+        imageUrl: "https://i.imgur.com/yMZ2LQV.png",
       },
     });
 
@@ -214,10 +229,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_logi-vibe.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_logi-vibe.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_logi-vibe.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_logi-vibe.png",
+          "https://i.imgur.com/x0tlemk.png",
+          "https://i.imgur.com/QJpDa4u.png",
+          "https://i.imgur.com/NIixXTn.png",
+          "https://i.imgur.com/poJD7PU.png",
         ],
         basePrice: 750,
         categoryId: headphonesCategory.id,
@@ -229,10 +244,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_logi-lightspeed-phone.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_logi-lightspeed-phone.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_logi-lightspeed-phone.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_logi-lightspeed-phone.png",
+          "https://i.imgur.com/AWf6jzC.png",
+          "https://i.imgur.com/UHUN3O3.png",
+          "https://i.imgur.com/KsXsXJ9.png",
+          "https://i.imgur.com/FskghBz.png",
         ],
         basePrice: 1200,
         categoryId: headphonesCategory.id,
@@ -244,10 +259,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_logi-astro-a30.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_logi-astro-a30.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_logi-astro-a30.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_logi-astro-a30.png",
+          "https://i.imgur.com/qrVZ3XS.png",
+          "https://i.imgur.com/K50vdvB.png",
+          "https://i.imgur.com/oMAqZhA.png",
+          "https://i.imgur.com/w3XrePg.png",
         ],
         basePrice: 1500,
         categoryId: headphonesCategory.id,
@@ -259,10 +274,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_logi-earbuds.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_logi-earbuds.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_logi-earbuds.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_logi-earbuds.png",
+          "https://i.imgur.com/pTklImy.png",
+          "https://i.imgur.com/bI4jQjE.png",
+          "https://i.imgur.com/aBMjV5P.png",
+          "https://i.imgur.com/nHRXEDG.png",
         ],
         basePrice: 550,
         categoryId: headphonesCategory.id,
@@ -274,10 +289,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_hyperx-stinger.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_hyperx-stinger.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_hyperx-stinger.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_hyperx-stinger.png",
+          "https://i.imgur.com/Mxyix4V.png",
+          "https://i.imgur.com/ZMt7seQ.png",
+          "https://i.imgur.com/yMZ2LQV.png",
+          "https://i.imgur.com/DLB8Ddy.png",
         ],
         basePrice: 250,
         categoryId: headphonesCategory.id,
@@ -289,10 +304,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_razer-kraken.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_razer-kraken.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_razer-kraken.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_razer-kraken.png",
+          "https://i.imgur.com/Z5EtjJZ.png",
+          "https://i.imgur.com/Na9Rofl.png",
+          "https://i.imgur.com/wK1cdGN.png",
+          "https://i.imgur.com/MBZHugS.png",
         ],
         basePrice: 200,
         categoryId: headphonesCategory.id,
@@ -308,7 +323,7 @@ async function main() {
       data: {
         name: "Mousepads",
         slug: "mousepads",
-        imageUrl: "https://fsw-store.s3.sa-east-1.amazonaws.com/mousepads.png",
+        imageUrl: "https://i.imgur.com/7xz6Bdi.png",
       },
     });
 
@@ -319,10 +334,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_logi-powerplay.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_logi-powerplay.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_logi-powerplay.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_logi-powerplay.png",
+          "https://i.imgur.com/7xz6Bdi.png",
+          "https://i.imgur.com/q0rUIir.png",
+          "https://i.imgur.com/g3mRvOL.png",
+          "https://i.imgur.com/KfiWJ9R.png",
         ],
         basePrice: 950,
         categoryId: mousepadsCategory.id,
@@ -334,10 +349,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_logi-desk-mat.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_logi-desk-mat.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_logi-desk-mat.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_logi-desk-mat.png",
+          "https://i.imgur.com/MYuVQlK.png",
+          "https://i.imgur.com/rkEtwND.png",
+          "https://i.imgur.com/jMEKzrB.png",
+          "https://i.imgur.com/djLRQb6.png",
         ],
         basePrice: 150,
         categoryId: mousepadsCategory.id,
@@ -349,10 +364,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_logi-g740.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_logi-g740.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_logi-g740.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_logi-g740.png",
+          "https://i.imgur.com/HMLOKeF.png",
+          "https://i.imgur.com/tU0k47K.png",
+          "https://i.imgur.com/SEtFzpG.png",
+          "https://i.imgur.com/UnvrYRT.png",
         ],
         basePrice: 200,
         categoryId: mousepadsCategory.id,
@@ -364,10 +379,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_logi-studio-series.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_logi-studio-series.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_logi-studio-series.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_logi-studio-series.png",
+          "https://i.imgur.com/EZSYL9X.png",
+          "https://i.imgur.com/lFCulKo.png",
+          "https://i.imgur.com/2QbQajj.png",
+          "https://i.imgur.com/ecWILi3.png",
         ],
         basePrice: 250,
         categoryId: mousepadsCategory.id,
@@ -379,10 +394,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_force-dark.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_force-dark.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_force-dark.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_force-dark.png",
+          "https://i.imgur.com/Da18wUk.png",
+          "https://i.imgur.com/XfKVlvl.png",
+          "https://i.imgur.com/S6X6EJy.png",
+          "https://i.imgur.com/voIPL0P.png",
         ],
         basePrice: 300,
         categoryId: mousepadsCategory.id,
@@ -394,10 +409,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_force-snow.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_force-snow.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_force-snow.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_force-snow.png",
+          "https://i.imgur.com/hGpSM0A.png",
+          "https://i.imgur.com/AMUo25H.png",
+          "https://i.imgur.com/YkPv4MO.png",
+          "https://i.imgur.com/4oH6K4M.png",
         ],
         basePrice: 300,
         categoryId: mousepadsCategory.id,
@@ -413,7 +428,7 @@ async function main() {
       data: {
         name: "Monitores",
         slug: "monitors",
-        imageUrl: "https://fsw-store.s3.sa-east-1.amazonaws.com/monitors.png",
+        imageUrl: "https://i.imgur.com/kP3ltCK.png",
       },
     });
 
@@ -424,10 +439,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_dell-S2421HN.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_dell-S2421HN.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_dell-S2421HN.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_dell-S2421HN.png",
+          "https://i.imgur.com/JU6EE8m.png",
+          "https://i.imgur.com/2b3Ie2u.png",
+          "https://i.imgur.com/lVroFhJ.png",
+          "https://i.imgur.com/18S2Qwu.png",
         ],
         basePrice: 1500,
         categoryId: monitorsCategory.id,
@@ -439,10 +454,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_dell-P2422H.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_dell-P2422H.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_dell-P2422H.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_dell-P2422H.png",
+          "https://i.imgur.com/ncpn56F.png",
+          "https://i.imgur.com/8dGGb46.png",
+          "https://i.imgur.com/6YqRFr7.png",
+          "https://i.imgur.com/xCPjA1G.png",
         ],
         basePrice: 2000,
         categoryId: monitorsCategory.id,
@@ -454,10 +469,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_dell-P2723QE.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_dell-P2723QE.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_dell-P2723QE.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_dell-P2723QE.png",
+          "https://i.imgur.com/8bICqRk.png",
+          "https://i.imgur.com/IqYCkr8.png",
+          "https://i.imgur.com/5Ax2gMn.png",
+          "https://i.imgur.com/T4y9WOV.png",
         ],
         basePrice: 2500,
         categoryId: monitorsCategory.id,
@@ -469,10 +484,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_dell-S3422DWG.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_dell-S3422DWG.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_dell-S3422DWG.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_dell-S3422DWG.png",
+          "https://i.imgur.com/oht0odB.png",
+          "https://i.imgur.com/qosRZFh.png",
+          "https://i.imgur.com/5Ax2gMn.png",
+          "https://i.imgur.com/Ljm1EvW.png",
         ],
         basePrice: 3200,
         categoryId: monitorsCategory.id,
@@ -484,10 +499,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_dell-S3222DGM.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_dell-S3222DGM.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_dell-S3222DGM.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_dell-S3222DGM.png",
+          "https://i.imgur.com/07t4BAZ.png",
+          "https://i.imgur.com/kP3ltCK.png",
+          "https://i.imgur.com/JyCPRdf.png",
+          "https://i.imgur.com/L0o6QDM.png",
         ],
         basePrice: 3500,
         categoryId: monitorsCategory.id,
@@ -499,10 +514,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_dell-AW2524HF.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_dell-AW2524HF.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_dell-AW2524HF.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_dell-AW2524HF.png",
+          "https://i.imgur.com/m1vkYss.png",
+          "https://i.imgur.com/ImbxpJZ.png",
+          "https://i.imgur.com/HxtjkSd.png",
+          "https://i.imgur.com/k2aGdMR.png",
         ],
         basePrice: 4200,
         categoryId: monitorsCategory.id,
@@ -518,7 +533,7 @@ async function main() {
       data: {
         name: "Speakers",
         slug: "speakers",
-        imageUrl: "https://fsw-store.s3.sa-east-1.amazonaws.com/speakers.png",
+        imageUrl: "https://i.imgur.com/yrc7KMs.png",
       },
     });
 
@@ -529,10 +544,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_logi-surround-z607.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_logi-surround-z607.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_logi-surround-z607.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_logi-surround-z607.png",
+          "https://i.imgur.com/yrc7KMs.png",
+          "https://i.imgur.com/ACtidDl.png",
+          "https://i.imgur.com/3PYLdak.png",
+          "https://i.imgur.com/2qZEK2a.png",
         ],
         basePrice: 1200,
         categoryId: speakersCategory.id,
@@ -544,10 +559,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_logi-dock.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_logi-dock.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_logi-dock.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_logi-dock.png",
+          "https://i.imgur.com/tqKA6XD.png",
+          "https://i.imgur.com/4Fn3wSz.png",
+          "https://i.imgur.com/JXe6H8v.png",
+          "https://i.imgur.com/q8sADSt.png",
         ],
         basePrice: 4500,
         categoryId: speakersCategory.id,
@@ -559,10 +574,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_sony-SA-Z9R.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_sony-SA-Z9R.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_sony-SA-Z9R.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_sony-SA-Z9R.png",
+          "https://i.imgur.com/c4lJtaD.png",
+          "https://i.imgur.com/Qxx8MlO.png",
+          "https://i.imgur.com/bjE91JY.png",
+          "https://i.imgur.com/bNPt7fi.png",
         ],
         basePrice: 4000,
         categoryId: speakersCategory.id,
@@ -574,10 +589,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_sony-extra-bass.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_sony-extra-bass.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_sony-extra-bass.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_sony-extra-bass.png",
+          "https://i.imgur.com/wR4J15C.png",
+          "https://i.imgur.com/2R6A6vu.png",
+          "https://i.imgur.com/taY177G.png",
+          "https://i.imgur.com/mN9fbbV.png",
         ],
         basePrice: 3200,
         categoryId: speakersCategory.id,
@@ -589,10 +604,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_sony-XB23.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_sony-XB23.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_sony-XB23.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_sony-XB23.png",
+          "https://i.imgur.com/GSD0mBo.png",
+          "https://i.imgur.com/cs2VugP.png",
+          "https://i.imgur.com/dUUaKXw.png",
+          "https://i.imgur.com/P3xKaTT.png",
         ],
         basePrice: 3500,
         categoryId: speakersCategory.id,
@@ -604,10 +619,10 @@ async function main() {
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
         imageUrls: [
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/01_sony-S200F.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/02_sony-S200F.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/03_sony-S200F.png",
-          "https://fsw-store.s3.sa-east-1.amazonaws.com/04_sony-S200F.png",
+          "https://i.imgur.com/WlECnB4.png",
+          "https://i.imgur.com/3JCEjTD.png",
+          "https://i.imgur.com/pD4OgkI.png",
+          "https://i.imgur.com/SVHfatd.png",
         ],
         basePrice: 2500,
         categoryId: speakersCategory.id,
