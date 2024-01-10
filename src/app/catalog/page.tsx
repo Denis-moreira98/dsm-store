@@ -3,6 +3,12 @@ import { prismaClient } from "@/lib/prisma";
 import { ShapesIcon } from "lucide-react";
 import CategoryItem from "./components/category-item";
 import ContainerLayout from "@/components/ui/containerLayout";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "DSM STORE - Catálogo",
+  description: "Catálogo de produtos",
+};
 
 const CatalogoPage = async () => {
   const categories = await prismaClient.category.findMany({});
