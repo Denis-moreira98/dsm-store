@@ -13,6 +13,16 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "DSM STORE - Os melhores preços do Brasil",
   description: "Os melhores periféricos e os melhores preços em um só lugar",
+  icons: {
+    icon: ["/favicon.ico?v=4"],
+  },
+  openGraph: {
+    images: [
+      {
+        url: "https://i.imgur.com/gGzo9ag.png",
+      },
+    ],
+  },
   keywords: [
     "periféricos",
     "mouses",
