@@ -5,9 +5,14 @@ import { LogInIcon, PackageSearchIcon } from "lucide-react";
 import { getServerSession } from "next-auth";
 import OrderItem from "./components/order-item";
 import ContainerLayout from "@/components/ui/containerLayout";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "DSM STORE - Meus pedidos",
+  description: "Meus pedidos",
+};
 
 export const dynamic = "force-dynamic";
-
 async function OrderPage() {
   const session = await getServerSession(authOptions);
 
