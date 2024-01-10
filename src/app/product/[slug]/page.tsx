@@ -5,10 +5,24 @@ import { computeProductTotalPrice } from "@/helpers/product";
 import ProductList from "@/components/ui/product-list";
 import SectionTitle from "@/components/ui/section-title";
 import ContainerLayout from "@/components/ui/containerLayout";
+import { Metadata } from "next";
 
 interface ProductDatailPageProps {
   params: {
     slug: string;
+  };
+}
+
+export async function generateMetadata({
+  params,
+}: ProductDatailPageProps): Promise<Metadata> {
+  const product = await prismaClient.product.findFirst({
+    where: {
+      slug: params.slug,
+    },
+  });
+  return {
+    title: `${product?.name ?? "Detalhes do Produto"}`,
   };
 }
 
