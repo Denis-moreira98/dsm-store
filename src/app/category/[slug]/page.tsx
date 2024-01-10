@@ -4,6 +4,18 @@ import ProductItem from "@/components/ui/product-item";
 import { computeProductTotalPrice } from "@/helpers/product";
 import { CATEGORY_ICON } from "@/constants/category-icon";
 import ContainerLayout from "@/components/ui/containerLayout";
+import { Metadata } from "next";
+
+export async function generateMetadata({ params }: any): Promise<Metadata> {
+  const category = await prismaClient.category.findFirst({
+    where: {
+      slug: params.slug,
+    },
+  });
+  return {
+    title: `DSM STORE - ${category?.name ?? "Produtos"}`,
+  };
+}
 
 const CategoryProducts = async ({ params }: any) => {
   const category = await prismaClient.category.findFirst({
