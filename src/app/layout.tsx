@@ -17,11 +17,7 @@ export const metadata: Metadata = {
     icon: ["/favicon.ico?v=4"],
   },
   openGraph: {
-    images: [
-      {
-        url: "https://i.imgur.com/gGzo9ag.png",
-      },
-    ],
+    images: [`${process.env.HOST_URL}/preview.png`],
   },
   keywords: [
     "periféricos",
